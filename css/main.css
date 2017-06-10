@@ -29,5 +29,8 @@ body {
 
 .face {
     padding: 40px;
-    display:inline-block;
+}
+
+.contact-thing {
+    padding-top: 40px;
 }
