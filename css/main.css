@@ -56,3 +56,21 @@ body {
     -ms-filter: blur(10px);
     filter: blur(10px);
 }
+
+.speech {
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    max-width: 800px;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+}

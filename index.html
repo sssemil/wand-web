@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--This web page has been designed and created by Emil Suleymanov <suleymanovemil8@gmail.com>
+    with a lot of googling. Show mercy.
+
+    GitHub -> https://github.com/sssemil/wand-web
+    -->
 <html lang="en">
 <head>
     <title>Wand</title>
@@ -15,7 +20,7 @@
 
 <nav role="navigation" class="navbar navbar-default">
     <div class="navbar-header">
-        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle collapsed"
+        <button type="button" data-target="#navbar_collapse" data-toggle="collapse" class="navbar-toggle collapsed"
                 aria-expanded="false">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -23,7 +28,7 @@
         </button>
     </div>
 
-    <div id="navbarCollapse" class="navbar-collapse collapse navbar-inverse" aria-expanded="false" style="height: 1px;">
+    <div id="navbar_collapse" class="navbar-collapse collapse navbar-inverse" aria-expanded="false" style="height: 1px;">
         <ul class="nav navbar-nav navbar-left">
             <li><a href="#about_wand">About Wand</a></li>
             <li><a href="#our_team">Our Team</a></li>
@@ -36,24 +41,37 @@
     <div class="fullscreen bg">
     </div>
 
-    <article class="fullscreen">
+    <div class="fullscreen">
         <br/>
         <br/>
         <h1 class="large-title">Wand</h1>
         <h4>Igniting the future</h4>
-    </article>
+    </div>
 
-    <article id="about_wand" class="fullscreen">
+    <div id="about_wand" class="fullscreen">
         <br/>
         <br/>
         <h2>About Wand</h2>
-        <h5>
-            Wand is a smartpen that sends every scratch you made to your smartphone the way it is.
-        </h5>
-    </article>
+        <div class="row">
+            <div class="col-sm-6 centered">
+                <i class="fa fa-recycle fa-5x" style="font-size: 196px" aria-hidden="true"></i>
+            </div>
+            <div class="col-sm-6">
+                <article class="speech">
+                    Wand is a smart pen with temporary ink that sends to your smartphone every scratch you made on a
+                    piece of
+                    paper the way you wrote it. The temporary ink evaporates after about 30 minutes from the paper
+                    allowing you
+                    to see what you’ve written and reuse the same piece of paper aftewards while your data is stored
+                    nice and
+                    safe on your phone, and, if you want, backed up on our servers.
+                </article>
+            </div>
+        </div>
+    </div>
     <br/>
 
-    <article id="our_team" class="fullscreen">
+    <div id="our_team" class="fullscreen">
         <br/>
         <br/>
         <h2>Our Team</h2>
@@ -63,37 +81,37 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 contact-thing">
-                    <img src="./img/f.png" alt="" class="img70width img-fluid img-circle">
+                    <img src="./img/f.png">
                     <div style="text-align:center; font-family: 'Questrial', sans-serif;"><span style="font-size:20px;">Ferrukh Nebiyev</span>
-                        <br>project manager
+                        <br>3D modeler
                     </div>
                 </div>
-                <div class="col-sm-3 contact-thing"><img src="./img/a.png" alt=""
-                                                         class="img70width img-fluid img-circle">
+                <div class="col-sm-3 contact-thing">
+                    <img src="./img/a.png">
                     <div style="text-align:center; font-family: 'Questrial', sans-serif;"><span style="font-size:20px;">Anar Aliyev</span>
-                        <br>software engineer
-                        <br>(co-founder)
-                    </div>
-                </div>
-                <div class="col-sm-3 contact-thing"><img src="./img/m.png" alt=""
-                                                         class="img70width img-fluid img-circle">
-                    <div style="text-align:center; font-family: 'Questrial', sans-serif;"><span style="font-size:20px;">Murad Mammadov</span>
                         <br>hardware engineer
                         <br>(co-founder)
                     </div>
                 </div>
-                <div class="col-sm-3 contact-thing"><img src="./img/e.png" alt=""
-                                                         class="img70width img-fluid img-circle">
+                <div class="col-sm-3 contact-thing">
+                    <img src="./img/m.png">
+                    <div style="text-align:center; font-family: 'Questrial', sans-serif;"><span style="font-size:20px;">Murad Mammadov</span>
+                        <br>software engineer
+                        <br>(co-founder)
+                    </div>
+                </div>
+                <div class="col-sm-3 contact-thing">
+                    <img src="./img/e.png">
                     <div style="text-align:center; font-family: 'Questrial', sans-serif;"><span style="font-size:20px;">Emil Suleymanov</span>
                         <br>software engineer
                     </div>
                 </div>
             </div>
         </div>
-    </article>
+    </div>
     <br/>
 
-    <article id="contacts" class="fullscreen">
+    <div id="contacts" class="fullscreen">
         <br/>
         <br/>
         <h2>Contacts</h2>
@@ -116,7 +134,11 @@
                 </div>
             </div>
         </div>
-    </article>
+    </div>
+
+    <div style="padding-bottom: 50px;">
+        <p>Copyright © 2017 io_developers</p>
+    </div>
 </div>
 
 </body>
