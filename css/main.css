@@ -1,13 +1,14 @@
 .large-title {
-    font-size:96px;
+    font-size: 96px;
 }
 
-@media (max-width:768px){
-    .large-title{
-        font-size:48px;
+@media (max-width: 768px) {
+    .large-title {
+        font-size: 48px;
     }
-    .text01{
-        font-size:18px;
+
+    .text01 {
+        font-size: 18px;
     }
 }
 
@@ -18,8 +19,10 @@
 body {
     background-color: #1c1c21;
     color: #ffffff;
+    text-align: center;
 }
 
-.navbar{
-
+.navbar {
+    background-color: transparent;
+    border-color: transparent;
 }
