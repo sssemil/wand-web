@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <ul class="nav navbar-nav">
+
+<nav role="navigation" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle collapsed"
+                aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div id="navbarCollapse" class="navbar-collapse collapse navbar-inverse" aria-expanded="false" style="height: 1px;">
+        <ul class="nav navbar-nav navbar-left">
             <li><a href="#about_wand">About Wand</a></li>
             <li><a href="#our_team">Our Team</a></li>
             <li><a href="#contacts">Contacts</a></li>
         </ul>
     </div>
 </nav>
+
 <div class="container-fluid">
     <article class="fullscreen">
         <br/>
@@ -30,7 +42,7 @@
     <article id="about_wand" class="fullscreen">
         <br/>
         <br/>
-        <h3>About Wand</h3>
+        <h2>About Wand</h2>
         <h5>
             Wand is a smartpen that sends every scratch you made to your smartphone the way it is.
         </h5>
@@ -40,20 +52,58 @@
     <article id="our_team" class="fullscreen">
         <br/>
         <br/>
-        <h3>Our Team</h3>
-        <h5>
-            We are just 4 dudes.
-        </h5>
+        <h2>Our Team</h2>
+        <br/>
+        <br/>
+        <div>
+            <div class="face"><img src="./img/f.png" alt="" class="img70width img-fluid img-circle">
+                <div style="text-align:center; font-family: 'Questrial', sans-serif;"><span style="font-size:20px;">Ferrukh Nebiyev</span>
+                    <br>project manager
+                </div>
+            </div>
+            <div class="face"><img src="./img/a.png" alt="" class="img70width img-fluid img-circle">
+                <div style="text-align:center; font-family: 'Questrial', sans-serif;"><span style="font-size:20px;">Anar Aliyev</span>
+                    <br>software engineer
+                    <br>(co-founder)
+                </div>
+            </div>
+            <div class="face"><img src="./img/m.png" alt="" class="img70width img-fluid img-circle">
+                <div style="text-align:center; font-family: 'Questrial', sans-serif;"><span style="font-size:20px;">Murad Mammadov</span>
+                    <br>hardware engineer
+                    <br>(co-founder)
+                </div>
+            </div>
+            <div class="face"><img src="./img/e.png" alt="" class="img70width img-fluid img-circle">
+                <div style="text-align:center; font-family: 'Questrial', sans-serif;"><span style="font-size:20px;">Emil Suleymanov</span>
+                    <br>software engineer
+                </div>
+            </div>
+        </div>
     </article>
     <br/>
 
     <article id="contacts" class="fullscreen">
         <br/>
         <br/>
-        <h3>Contacts</h3>
-        <h5>
-            You can contact us using following email address: <a href="mailto:iodevs1@gmail.com">iodevs1@gmail.com</a>
-        </h5>
+        <h2>Contacts</h2>
+        <br/>
+        <br/>
+        <div class="col-md-8 col-md-offset-2">
+            <span class="col-md-4">
+                <i class="fa fa-facebook fa-2x" style="color:white"></i>
+                <p><a href="https://www.facebook.com/iodevelopers" style="color:white">io developers</a></p>
+            </span>
+
+            <span class="col-md-4">
+                <i class="fa fa-envelope-o fa-2x" style="color:white"></i>
+                <p><a href="mailto:iodevs1@gmail.com" style="color:white">iodevs1@gmail.com</a></p>
+            </span>
+
+            <span class="col-md-4">
+                <i class="fa fa-phone fa-2x" style="color:white"></i>
+                <p><a href="tel:994-55-618-1203" style="color:white">(+994) 55 618 1203</a></p>
+            </span>
+        </div>
     </article>
 </div>
 
