@@ -1,0 +1,25 @@
+.large-title {
+    font-size:96px;
+}
+
+@media (max-width:768px){
+    .large-title{
+        font-size:48px;
+    }
+    .text01{
+        font-size:18px;
+    }
+}
+
+.fullscreen {
+    height: 100vh;
+}
+
+body {
+    background-color: #1c1c21;
+    color: #ffffff;
+}
+
+.navbar{
+
+}
