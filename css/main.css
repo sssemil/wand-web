@@ -74,3 +74,8 @@ body {
     flex-direction: column;
     height: 300px;
 }
+
+.logo {
+    max-width: 80%;
+    max-height: 80%;
+}
