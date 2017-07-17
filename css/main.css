@@ -17,8 +17,8 @@
 }
 
 body {
-    background-color: #222;
-    color: #ffffff;
+    #background-color: #222;
+    #color: #ffffff;
     text-align: center;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .bg {
-    background: url(../img/wand.png) no-repeat center fixed;
+    background: url(../img/wand-neg.png) no-repeat center fixed;
     content: '';
     z-index: -1;
     width: 100%;
@@ -65,7 +65,6 @@ body {
     font-family: 'Questrial', sans-serif;
     font-size: 20px;
     text-align: left;
-    max-width: 800px;
 }
 
 .centered{
@@ -78,7 +77,11 @@ body {
 .logo {
     max-width: 80%;
     max-height: 80%;
+    border-radius: 50%;
+    background-color: #24292e;
+    overflow: hidden;
 }
+
 @media screen and (max-device-width: 480px) {
     h1 {
         font-size: 26px;
@@ -87,4 +90,12 @@ body {
 
 .moto {
     padding: 40px;
+}
+
+.navbar-inverse {
+    background-color: #24292e;
+}
+
+.navbar {
+    border: 0;
 }
