@@ -99,3 +99,15 @@ body {
 .navbar {
     border: 0;
 }
+
+.row2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+}
+.row2 > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
