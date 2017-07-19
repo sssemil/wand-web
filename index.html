@@ -28,12 +28,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#222">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/ionicons.css">
-    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 
@@ -61,15 +61,13 @@
     <!--<div class="fullscreen bg">
     </div>-->
 
-    <div class="fullscreen">
+    <div class="fullscreen defPadding">
         <!--<h1 class="large-title">Wand</h1>-->
         <img style="padding: 25px" class="logo" src="./img/logo.png"/>
         <h1 class="moto">Igniting the future</h1>
     </div>
 
-    <div id="about_wand">
-        <br/>
-        <br/>
+    <div id="about_wand" class="field defPaddingTop">
         <h2>About Wand</h2>
         <div class="row">
             <div class="col-sm-6">
@@ -91,21 +89,18 @@
             </div>
         </div>
     </div>
-    <br/>
 
-    <div id="advantages">
-        <br/>
-        <br/>
-        <h2>Advantages</h2>
+    <div id="advantages" class="defPadding">
+        <h2 class="mergedHead">ADVANTAGES</h2>
         <div class="row row2">
-            <div class="col-sm-3" style="background-color: #B3A7B3">
+            <div class="col-sm-3 belowMergedHead" style="background-color: #B3A7B3">
                 <h3 class="whiteColor">Time saving</h3>
                 <i class="ion-ios-time-outline whiteColor" style="font-size: 85px" aria-hidden="true"></i>
                 <article class="speech whiteColor">
                     Our app converts your script into a digital text automatically, so you don’t need to type anything.
                 </article>
             </div>
-            <div class="col-sm-3" style="background-color: #CC5D4C">
+            <div class="col-sm-3 belowMergedHead" style="background-color: #CC5D4C">
                 <h3 class="whiteColor">Multiplatform</h3>
                 <div class="whiteColor">
                     <div style="font-size: 45px">
@@ -121,7 +116,7 @@
                     works on Android, and will be available on iOS and Windows Phone soon.
                 </article>
             </div>
-            <div class="col-sm-3" style="background-color: #2A253B">
+            <div class="col-sm-3 belowMergedHead" style="background-color: #2A253B">
                 <h3 class="whiteColor">Secure</h3>
                 <i class="ion-ios-locked-outline whiteColor" style="font-size: 85px" aria-hidden="true"></i>
                 <article class="speech whiteColor">
@@ -129,7 +124,7 @@
                     storage which is extremely important for governmental and business clients
                 </article>
             </div>
-            <div class="col-sm-3" style="background-color: #BCA190">
+            <div class="col-sm-3 belowMergedHead" style="background-color: #BCA190">
                 <h3 class="whiteColor">Sustainable</h3>
                 <i class="ion-earth whiteColor" style="font-size: 85px" aria-hidden="true"></i>
                 <article class="speech whiteColor">
@@ -138,40 +133,36 @@
             </div>
         </div>
     </div>
-    <br/>
 
-    <div id="our_team">
-        <br/>
-        <br/>
+    <div id="our_team" class="field defPaddingTop defPaddingBottom">
         <h2>Our Team</h2>
-        <br/>
-        <br/>
-
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 contact-thing">
-                    <a href="https://www.linkedin.com/in/emil-s-208a71109/"><img src="./img/e.png"></a>
+                    <a href="https://www.linkedin.com/in/emil-s-208a71109/"><img class="face" src="./img/e.png"></a>
                     <div style="text-align:center; font-family: 'Questrial', sans-serif;"><span style="font-size:20px;">Emil Suleymanov</span>
                         <br><b>software engineer</b>
                         <br>worked at 6 freelance projects
                     </div>
                 </div>
                 <div class="col-sm-3 contact-thing">
-                    <img src="./img/m.png">
+                    <a href="https://www.linkedin.com/in/murad-mammadov-86bb7a146/"><img class="face" src="./img/m.png"></a>
                     <div style="text-align:center; font-family: 'Questrial', sans-serif;"><span style="font-size:20px;">Murad Mammadov</span>
                         <br><b>CEO</b>
                         <br>2nd place at AR programming olympiad
                     </div>
                 </div>
                 <div class="col-sm-3 contact-thing">
-                    <a href="https://www.linkedin.com/in/anar-aliyev-697ab213a/"><img src="./img/a.png"></a>
+                    <a href="https://www.linkedin.com/in/anar-aliyev-697ab213a/"><img class="face"
+                                                                                      src="./img/a.png"></a>
                     <div style="text-align:center; font-family: 'Questrial', sans-serif;"><span style="font-size:20px;">Anar Aliyev</span>
                         <br><b>CTO</b>
                         <br>hardware developer at Spinal
                     </div>
                 </div>
                 <div class="col-sm-3 contact-thing">
-                    <img src="./img/f.png">
+                    <a href="https://www.linkedin.com/in/farrukh-nabiyev-3a99a0140/"><img class="face"
+                                                                                          src="./img/f.png"></a>
                     <div style="text-align:center; font-family: 'Questrial', sans-serif;"><span style="font-size:20px;">Ferrukh Nebiyev</span>
                         <br><b>product designer</b>
                         <br>semifinalist at ACM olympiad
@@ -180,27 +171,14 @@
             </div>
         </div>
     </div>
-    <br/>
 
-    <div id="our_sponsors">
-        <br/>
-        <br/>
+    <div id="our_sponsors" class="defPadding">
         <h2>Our Sponsors</h2>
-        <br/>
-        <br/>
-        <img src="./img/ictfund.png">
-        <br/>
-        <br/>
+        <a href="http://ictfund.gov.az/?lang=en"> <img class="face" src="./img/ictfund.png"></a>
     </div>
-    <br/>
 
-    <div id="contacts">
-        <br/>
-        <br/>
+    <div id="contacts" class="defPadding">
         <h2>Contacts</h2>
-        <br/>
-        <br/>
-
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 contact-thing">
@@ -221,10 +199,8 @@
         <br/>
     </div>
 
-    <div style="padding-bottom: 50px; padding-top: 50px;">
-        <br/>
+    <div class="bottomPadding">
         <p>Copyright © 2017 io_developers</p>
-        <br/>
     </div>
 </div>
 <script>

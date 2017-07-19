@@ -20,6 +20,7 @@ body {
     background-color: #F5F5F5;
     #color: #ffffff;
     text-align: center;
+
 }
 
 .navbar {
@@ -115,4 +116,55 @@ body {
 
 .whiteColor {
     color: #FEFEFE !important;
+}
+
+.field {
+    color: #FEFEFE !important;
+    background: url(../img/field.png) no-repeat bottom;
+    background-size: cover;
+}
+
+.face {
+    max-width: 250px;
+    max-height: 250px;
+    background-size: cover;
+}
+
+.defPaddingTop {
+    padding-top: 50px;
+}
+
+.defPaddingBottom {
+    padding-bottom: 50px;
+}
+
+.bottomPadding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.mergedHead {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 50pt;
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.belowMergedHead{
+    padding-top: 90pt;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
