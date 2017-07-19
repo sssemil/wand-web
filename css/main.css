@@ -41,7 +41,7 @@ body {
 }
 
 .bg {
-    background: url(../img/wand-neg.png) no-repeat center fixed;
+    background: url(../img/wand.png) no-repeat center fixed;
     content: '';
     z-index: -1;
     width: 100%;
@@ -120,8 +120,18 @@ body {
 
 .field {
     color: #FEFEFE !important;
-    background: url(../img/field.png) no-repeat bottom;
+    background: url(../img/field.png) no-repeat bottom fixed;
     background-size: cover;
+}
+
+.wandAndApp {
+    color: #FEFEFE !important;
+    background: url(../img/wand_n_app.png) no-repeat bottom fixed;
+    background-size: cover;
+}
+
+.tlgBg{
+    background: url(../img/bg_initial.jpg) repeat bottom fixed;
 }
 
 .face {
@@ -167,4 +177,13 @@ body {
 .container-fluid {
     padding-right: 0 !important;
     padding-left: 0 !important;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+    border: 0 !important;
+}
+
+.preorder {
+    font-size: x-large !important;
 }
