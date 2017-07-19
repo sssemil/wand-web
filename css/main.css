@@ -16,6 +16,13 @@
     min-height: 100vh;
 }
 
+.ico{
+	display:block;
+	margin-left:auto;
+	margin-right: auto
+}
+
+
 body {
     background-color: #F5F5F5;
     #color: #ffffff;
@@ -64,6 +71,7 @@ body {
     padding-left: 50px;
     font-family: 'Questrial', sans-serif;
     font-size: 20px;
+    color: #FFFFFF;
     text-align: left;
 }
 
@@ -74,11 +82,8 @@ body {
     height: 300px;
 }
 
-.logo {
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 50%;
-    background-color: #24292e;
+.solution {
+    max-width: 100%;
     overflow: hidden;
 }
 
