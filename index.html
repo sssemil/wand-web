@@ -34,8 +34,58 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/ionicons.css">
+
+    <script>
+        $('#emailModal').on('show.bs.modal', function (event) {
+            var modal = $(this);
+            modal.find('.modal-title').text('Subscribe');
+        });
+
+        function sendEmail() {
+            $.ajax({
+                type: "POST",
+                url: "https://iodevs.000webhostapp.com/add.php",
+                async:false,
+                data: {
+                    email: $("#email").val()
+                },
+                success: function (response) {
+                    //service.php response
+                    console.log(response);
+                    alert("Thank you for subscribing! We will contact you soon.");
+                },
+                error: function (err) {
+                    console.log(err);
+                    alert("Something went wrong. If this error persists, please, try contacting us using the email at the bottom.");
+                }
+            });
+        }
+    </script>
 </head>
 <body>
+
+<div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Subscribe</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="email" class="control-label">Enter your email address, so we could contact you:</label>
+                        <input type="email" class="form-control" id="email"/>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="sendEmail()" data-dismiss="modal">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <nav role="navigation" class="navbar navbar-default">
     <div class="navbar-header">
@@ -71,7 +121,11 @@
             <br/>
             <!--<a href="mailto:iodevs1@gmail.com?subject=Wand Preorder"
                class="btn btn-info preorder" role="button">PREORDER</a>-->
-            <h1 class="moto">Igniting the future</h1>
+            <!--https://iodevs.000webhostapp.com/add.php-->
+            <!--<h1 class="moto">Igniting the future</h1>-->
+
+            <button type="button" class="btn btn-primary preorder" data-toggle="modal"
+                    data-target="#emailModal">PREORDER</button>
         </div>
     </div>
 
