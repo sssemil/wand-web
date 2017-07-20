@@ -120,8 +120,8 @@ body {
 
 .field {
     color: #FEFEFE !important;
-    background: url(../img/field.png) no-repeat bottom fixed;
     background-size: cover;
+    background: #9E9E9E url(../img/field.png) no-repeat fixed bottom;
 }
 
 .wandAndApp {
