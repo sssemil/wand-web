@@ -45,7 +45,7 @@
             $.ajax({
                 type: "POST",
                 url: "https://iodevs.000webhostapp.com/add.php",
-                async:false,
+                async: false,
                 data: {
                     email: $("#email").val()
                 },
@@ -68,26 +68,29 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
                 <h4 class="modal-title" id="exampleModalLabel">Subscribe</h4>
             </div>
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <label for="email" class="control-label">Enter your email address, so we could contact you:</label>
+                        <label for="email" class="control-label">Enter your email address, so we could contact
+                            you:</label>
                         <input type="email" class="form-control" id="email"/>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick="sendEmail()" data-dismiss="modal">Subscribe</button>
+                <button type="button" class="btn btn-primary" onclick="sendEmail()" data-dismiss="modal">Subscribe
+                </button>
             </div>
         </div>
     </div>
 </div>
 
-<nav role="navigation" class="navbar navbar-default">
+<nav role="navigation" class="navbar navbar-default navbar-inverse">
     <div class="navbar-header">
         <button type="button" data-target="#navbar_collapse" data-toggle="collapse" class="navbar-toggle collapsed"
                 aria-expanded="false">
@@ -111,10 +114,19 @@
     <!--<div class="fullscreen bg">
     </div>-->
 
-    <div class="fullscreen defPaddingTop tlgBg">
+    <div class="fullscreen defPaddingTop forestBg">
         <!--<h1 class="large-title">Wand</h1>-->
         <div class="row">
-            <img style="padding: 25px" class="logo" src="./img/logo.png"/>
+            <!--<img style="padding: 25px" class="logo" src="./img/logo.png"/>-->
+            <div class="parent">
+                <img class="image1" src="../img/app.png"/>
+                <img class="image2" src="../img/penshadow4k_low.png"/>
+            </div>
+            <span class="textParent">
+                <h1 style="color: whitesmoke;">WRITES WITH</h1>
+                <h1 style="color: cornflowerblue;">TEMPORARY INK</h1>
+                <h1 style="color: whitesmoke;">AND SAVES YOUR DATA</h1>
+            </span>
         </div>
         <div class="row">
             <br/>
@@ -125,7 +137,8 @@
             <!--<h1 class="moto">Igniting the future</h1>-->
 
             <button type="button" class="btn btn-primary preorder" data-toggle="modal"
-                    data-target="#emailModal">PREORDER</button>
+                    data-target="#emailModal">PREORDER
+            </button>
         </div>
     </div>
 
