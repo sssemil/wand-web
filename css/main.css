@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Bebas Neue Light";
+    src: url("../fonts/BebasNeue Light.otf") format("truetype");
+}
+
 .large-title {
     font-size: 96px;
 }
@@ -12,29 +17,20 @@
     }
 }
 
-.grad {
-    background: url(../img/bg.jpg) no-repeat center;
-    /*background: #616161; /* For browsers that do not support gradients */
-    /*background: -webkit-radial-gradient(#616161, black); /* For Safari 5.1 to 6.0 */
-    /*background: -o-radial-gradient(#616161, black); /* For Opera 11.1 to 12.0 */
-    /*background: -moz-radial-gradient(#616161, black); /* For Firefox 3.6 to 15 */
-    /*background: radial-gradient(#616161, black); /* Standard syntax */
-}
-
-.forestBg {
-    background: url(../img/forest.png) no-repeat center;
-    background-size: cover;
-}
-
 .fullscreen {
     min-height: 100vh;
 }
 
 body {
-    background-color: #F5F5F5;
-    #color: #ffffff;
+    /*background-color: #F5F5F5;*/
+    background-color: #424242 !important;
+    /*color: #ffffff;*/
     text-align: center;
+}
 
+.inverse {
+    color: #F5F5F5 !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .navbar {
@@ -132,10 +128,26 @@ body {
     color: #FEFEFE !important;
 }
 
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: #9E9E9E url(../img/field.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .field {
     color: #FEFEFE !important;
-    background-size: cover;
     background: #9E9E9E url(../img/field.jpg) no-repeat fixed bottom;
+    background-size: cover;
 }
 
 .wandAndApp {
@@ -146,11 +158,6 @@ body {
 
 .tlgBg {
     background: url(../img/bg_initial.jpg) repeat bottom fixed;
-}
-
-.penBg {
-    background-size: cover;
-    background: url(../img/penshadow4k_low.png) no-repeat center fixed;
 }
 
 .face {
@@ -209,10 +216,12 @@ body {
 
 .textParent {
     position: absolute;
-    top: 50vh;
-    right: 8vh;
-    text-align: left !important;
-    overflow: hidden;
+    top: 120px;
+    /*right: 70px;*/
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    margin-left: 50vh;
+    margin-right: 10vh;
 }
 
 .parent {
@@ -234,10 +243,36 @@ body {
 
 .image2 {
     position: absolute;
-    top: 30px;
-    right: 70px;
-    max-width: 100%;
-    max-height: 70vh;
+    top: 120px;
+    /*right: 70px;*/
+    left: 22%;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    margin-left: 6vh;
+    margin-right: 20vh;
+}
+
+.farrukh {
+    font-family: Bebas Neue Light, monospace;
+    font-size: 56px;
+}
+
+@media screen and (max-width: 480px) {
+    .image1 {
+        max-width: 50%;
+    }
+
+    .image2 {
+        margin-top: 16vh;
+        margin-bottom: 20vh;
+        margin-left: 6vh;
+        margin-right: 20vh;
+        width: 95%;
+    }
+
+    .farrukh {
+        color: transparent !important;
+    }
 }
 
 @media screen and (max-width: 980px) {
@@ -246,32 +281,38 @@ body {
     }
 
     .image2 {
-        left: -10%;
-        max-width: 150%;
+        left: 10%;
     }
 }
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1024px) {
+    .image1 {
+        max-width: 50%;
+    }
+
     .image2 {
-        right: -20%;
-        max-width: 150%;
+        margin-top: 0;
+        margin-bottom: 20vh;
+        margin-left: 6vh;
+        margin-right: 20vh;
+        width: 70%;
+    }
+
+    .textParent {
+        margin-left: 40vh;
+    }
+
+    .farrukh {
+        color: transparent !important;
     }
 }
 
-@media screen and (min-width: 1450px) {
-    .image2 {
-        right: 10%;
+@media screen and (max-width: 1160px) {
+    .farrukh {
+        color: transparent !important;
     }
 }
 
-@media screen and (min-width: 1640px) {
-    .image2 {
-        right: 15%;
-    }
-}
-
-@media screen and (min-width: 1840px) {
-    .image2 {
-        right: 20%;
-    }
+.space {
+    height: 4vh;
 }
